@@ -87,10 +87,11 @@
 
  [![Gyazo](http://i.gyazo.com/7944ef43a7d9e4ec1edcbbf2de63bbb4.png)](http://gyazo.com/7944ef43a7d9e4ec1edcbbf2de63bbb4)
 
-10. ページ下部の「Download family」の中にある「Series Matrix File(s)」をクリックすると、正規化済みのデータのダウンロードリンクが表示されます。
+9. GSE28619のページが表示されました。
 
  [![Gyazo](http://i.gyazo.com/ccdb8f61750616ac60b0b9dac1950d75.png)](http://gyazo.com/ccdb8f61750616ac60b0b9dac1950d75)
 
+10. ページ下部の「Download family」の中にある「Series Matrix File(s)」をクリックすると、正規化済みのデータのダウンロードリンクが表示されます。
 11. ページ最下部の「Supplementary file」にあるリンクから生データをダウンロードすることができます。
 
  [![Gyazo](http://i.gyazo.com/4ef19d932765325d496ffaaa7b13150e.png)](http://gyazo.com/4ef19d932765325d496ffaaa7b13150e)
@@ -157,7 +158,7 @@
 
   [![Gyazo](http://i.gyazo.com/ae49254bb7651c7a940526255add19ce.png)](http://gyazo.com/ae49254bb7651c7a940526255add19ce)
 
-14. また、2番目に発現差が大きいとされた遺伝子である SLC16A10（SLCトランスポーターの一つ）は、アルコール肝炎患者で発現が低いことがわかります。
+14. また、2番目に発現差が大きいとされた遺伝子である SLC16A10（SLCトランスポーターの一つ）は、アルコール性肝炎患者で発現が低いことがわかります。
 
   [![Gyazo](http://i.gyazo.com/b956e24351811866ccdec210a91892b3.png)](http://gyazo.com/b956e24351811866ccdec210a91892b3)
 
@@ -175,7 +176,7 @@
 
 18. 「Save all results」 をクリックすると、結果をテキストで表示・保存できます。
 
- [![Gyazo](http://i.gyazo.com/62d32077159a1e775ccd6e1e73ea82f7.png)](http://gyazo.com/62d32077159a1e775ccd6e1e73ea82f7)
+ [![Gyazo](http://i.gyazo.com/36519a703f95ba99c58956785a5af499.png)](http://gyazo.com/36519a703f95ba99c58956785a5af499)
 
 19. Options タブをクリックすると、いくつかの設定を変更できます。左の項目は多重検定の補正法の選択です。デフォルトでは  "Benjamini & Hochberg" の方法が使われています。中央はデータの対数をとるかどうかの選択です。デフォルトでは自動検出で対数になります。右の項目はプラットフォームの注釈の選択です。"NCBI generated" がある場合はそれの方が信頼できます。
 
