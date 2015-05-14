@@ -87,11 +87,10 @@
 
  [![Gyazo](http://i.gyazo.com/7944ef43a7d9e4ec1edcbbf2de63bbb4.png)](http://gyazo.com/7944ef43a7d9e4ec1edcbbf2de63bbb4)
 
-9. GSE28619のページが表示されました。
+10. ページ下部の「Download family」の中にある「Series Matrix File(s)」をクリックすると、正規化済みのデータのダウンロードリンクが表示されます。
 
  [![Gyazo](http://i.gyazo.com/ccdb8f61750616ac60b0b9dac1950d75.png)](http://gyazo.com/ccdb8f61750616ac60b0b9dac1950d75)
 
-10. ページ下部の「Download family」の中にある「Series Matrix File(s)」をクリックすると、正規化済みのデータのダウンロードリンクが表示されます。
 11. ページ最下部の「Supplementary file」にあるリンクから生データをダウンロードすることができます。
 
  [![Gyazo](http://i.gyazo.com/4ef19d932765325d496ffaaa7b13150e.png)](http://gyazo.com/4ef19d932765325d496ffaaa7b13150e)
@@ -119,7 +118,7 @@
 
  [![Gyazo](http://i.gyazo.com/020666a58df1903d5532f62ffd9cf5f7.png)](http://gyazo.com/020666a58df1903d5532f62ffd9cf5f7)
 
-3. データセットに含まれるサンプルデータの一覧が表示されます。列見出しをクリックすると各項目でソートできます。このデータセットには、健常者 7名・アルコール性肝炎患者 15名の肝臓から得られた22個のサンプルデータからなることがわかります。
+3. データセットに含まれるサンプルデータの一覧が表示されます。列見出しをクリックすると各項目でソートできます。このデータセットには、健常者 7名・アルコール肝炎患者 15名の肝臓から得られた22個のサンプルデータからなることがわかります。
 
  [![Gyazo](http://i.gyazo.com/ad82f7f81091ab7cf300fdba8819bf96.png)](http://gyazo.com/ad82f7f81091ab7cf300fdba8819bf96)
 
@@ -149,16 +148,16 @@
 
 10. 結果が表示されました。t 検定の結果が P 値の小さい順に 250 件表示されます。
 
- [![Gyazo](http://gyazo.com/fddd13b327b76c5f6d20c16c905f4c97.png)](http://gyazo.com/fddd13b327b76c5f6d20c16c905f4c97)
+ [![Gyazo](http://i.gyazo.com/3ed4c71eb46333b0c00b2328642902a3.png)](http://gyazo.com/3ed4c71eb46333b0c00b2328642902a3)
 
 11. "P.Value" は元の P 値、"adj.P.Val" は多重検定の補正をかけた後の P 値です。有意性の評価は adj.P.Val に基づいています。 "t" は普通の t の標準偏差を全遺伝子の標準偏差を用いて調整したもの (moderated-t) です。普通の t より精度が上がっていますが、普通の t 分布に従うものとして扱えます。 "B" は2つのグループで発現量が異なっている対数オッズ値です。exp(B)/(1+exp(B)) の値が、発現量が異なっている確率です。"logFC" は、発現量の差が何倍であるかを2底の対数にしたものです。つまり値が 2 なら 4 倍の差を示しています。ここでの解析では発現量が対数で与えられている必要がありますが、元のデータでは対数になっていないことがあります。そのような場合デフォルトでは自動検出し、対数変換して計算してくれます。その上でこのような表示がされます。
 
-12. 各行をクリックすると、その行の遺伝子の各サンプルでの発現量のグラフが見られます。
-13. 今回は健常者 vs アルコール性肝炎患者の間で最も差が大きいとされた遺伝子である AKR1B10（アルドケト還元酵素ファミリーの一つ）について見てみましょう。AKR1B10 は、健常者と比較してアルコール性肝炎患者で発現が高いことがわかります。
+12. 各行をクリックすると、その行の遺伝子の各サンプルでの発現量グラフが見られます。
+13. 今回は健常者 vs アルコール肝炎患者の間で最も差が大きいとされた遺伝子である AKR1B10（アルドケト還元酵素ファミリーの一つ）について見てみましょう。AKR1B10 は、健常者と比較してアルコール肝炎患者で発現が高いことがわかります。
 
   [![Gyazo](http://i.gyazo.com/ae49254bb7651c7a940526255add19ce.png)](http://gyazo.com/ae49254bb7651c7a940526255add19ce)
 
-14. また、2番目に発現差が大きいとされた遺伝子である SLC16A10（SLCトランスポーターの一つ）は、アルコール性肝炎患者で発現が低いことがわかります。
+14. また、2番目に発現差が大きいとされた遺伝子である SLC16A10（SLCトランスポーターの一つ）は、アルコール肝炎患者で発現が低いことがわかります。
 
   [![Gyazo](http://i.gyazo.com/b956e24351811866ccdec210a91892b3.png)](http://gyazo.com/b956e24351811866ccdec210a91892b3)
 
@@ -176,7 +175,7 @@
 
 18. 「Save all results」 をクリックすると、結果をテキストで表示・保存できます。
 
- [![Gyazo](http://i.gyazo.com/36519a703f95ba99c58956785a5af499.png)](http://gyazo.com/36519a703f95ba99c58956785a5af499)
+ [![Gyazo](http://i.gyazo.com/62d32077159a1e775ccd6e1e73ea82f7.png)](http://gyazo.com/62d32077159a1e775ccd6e1e73ea82f7)
 
 19. Options タブをクリックすると、いくつかの設定を変更できます。左の項目は多重検定の補正法の選択です。デフォルトでは  "Benjamini & Hochberg" の方法が使われています。中央はデータの対数をとるかどうかの選択です。デフォルトでは自動検出で対数になります。右の項目はプラットフォームの注釈の選択です。"NCBI generated" がある場合はそれの方が信頼できます。
 
@@ -190,7 +189,7 @@
 
  [![Gyazo](http://i.gyazo.com/f3cfe393c8c171668c033dc8e14ea44d.png)](http://gyazo.com/f3cfe393c8c171668c033dc8e14ea44d)
 
-22. 健常者の方がアルコール性肝炎患者よりも ALDH2  の発現量に高い傾向がみられました。（この操作では何の計算も実行されないので、検定の結果の P 値を調べることはできません。）
+22. 健常者の方がアルコール肝炎患者よりも ALDH2  の発現量に高い傾向がみられました。（この操作では何の計算も実行されないので、検定の結果の P 値を調べることはできません。）
 
  [![Gyazo](http://i.gyazo.com/541c26af2297c69cefd343972960763b.png)](http://gyazo.com/541c26af2297c69cefd343972960763b)
 
@@ -213,9 +212,9 @@
 ##### マイクロアレイデータの準備
 - サンプルデータとして、【実習2】で解析した遺伝子発現データを用います。このデータは、多重比較法（Benjamini & Hochberg）を指定して、有意水準1％未満かつ2倍以上発現差のあった遺伝子群のリストです。 
 
-     → 「健常者＞AH患者_遺伝子リスト」[GEO2R_Ctrl.txt](https://github.com/yoki-ac/AJACS53/blob/patch-3/GEO2R_Ctrl.txt) 
+     → 「健常者＞AH患者_遺伝子リスト」[GEO2R_Ctrl.txt](https://github.com/yoki-ac/test/blob/master/GEO2R_Ctrl.txt) 
      
-     → 「AH患者＞健常者_遺伝子リスト」[GEO2R_AH.txt](https://github.com/yoki-ac/AJACS53/blob/patch-3/GEO2R_AH.txt) 
+     → 「AH患者＞健常者_遺伝子リスト」[GEO2R_AH.txt](https://github.com/yoki-ac/test/blob/master/GEO2R_AH.txt) 
       
    （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
   
@@ -234,7 +233,7 @@
 
   [![Gyazo](http://i.gyazo.com/6805eef66646ac24747a172d511afab6.png)](http://gyazo.com/6805eef66646ac24747a172d511afab6)
 
-3. リストのIDの種類を選択します。 … 今回は、"AFFYMETRIX_3PRIME_IVT_ID" と "Gene List" を選択します。
+3. リストのIDの種類タイプを選択します。 … 今回は、"AFFYMETRIX_3PRIME_IVT_ID" と "Gene List" を選択します。
 4. Submit List をクリックするとリストが読み込まれます。
 
   [![Gyazo](http://i.gyazo.com/2b320b921e5c4854da042a74a93ebc8e.png)](http://gyazo.com/2b320b921e5c4854da042a74a93ebc8e)
