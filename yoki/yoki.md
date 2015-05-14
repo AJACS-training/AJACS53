@@ -213,9 +213,9 @@
 ##### マイクロアレイデータの準備
 - サンプルデータとして、【実習2】で解析した遺伝子発現データを用います。このデータは、多重比較法（Benjamini & Hochberg）を指定して、有意水準1％未満かつ2倍以上発現差のあった遺伝子群のリストです。 
 
-     → 「健常者＞AH患者_遺伝子リスト」[GEO2R_Ctrl.txt](https://github.com/yoki-ac/AJACS53/blob/patch-3/GEO2R_Ctrl.txt) 
+     → 「健常者＞AH患者_遺伝子リスト」[GEO2R_Ctrl.txt](https://github.com/AJACS-training/AJACS53/blob/master/yoki/GEO2R_Ctrl.txt) 
      
-     → 「AH患者＞健常者_遺伝子リスト」[GEO2R_AH.txt](https://github.com/yoki-ac/AJACS53/blob/patch-3/GEO2R_AH.txt) 
+     → 「AH患者＞健常者_遺伝子リスト」[GEO2R_AH.txt](https://github.com/AJACS-training/AJACS53/blob/master/yoki/GEO2R_AH.txt) 
       
    （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
   
