@@ -1,4 +1,5 @@
 
+
 # AJACS御茶ノ水 遺伝子発現DB・ウェブツールの使い方　応用・実践編
 
 日本大学生物資源科学部  
@@ -27,6 +28,9 @@
 - 遺伝子群の機能解析ツール DAVID の使い方
     - DAVID
         - 【実習3】DAVIDを使って、発現データの解析結果を生物学的に解釈する
+- ［予備］転写制御因子予測ツール TFactS の使い方
+    - TFactS
+        - 【実習4】TFactSを使って、遺伝子群を制御する転写因子を予測する
 
 ----
 
@@ -43,7 +47,7 @@
 
 ## 公共の遺伝子発現データベース NCBI Gene Expression Omnibus（GEO）の使い方
 ### [GEO](http://www.ncbi.nlm.nih.gov/geo/)
-- NCBIが提供・維持管理している世界最大の遺伝子発現情報（マイクロアレイ）のデータベース
+- NCBIが提供・維持管理している世界最大の遺伝子発現情報（主にマイクロアレイ）のデータベース
 - [http://www.ncbi.nlm.nih.gov/geo/](http://www.ncbi.nlm.nih.gov/geo/)
 - 自分の興味のある発現データセットや遺伝子プロファイルを検索することができるだけでなく、それらの生データを自由にダウンロードすることが可能です。
 
@@ -69,7 +73,7 @@
 
  [![Gyazo](http://i.gyazo.com/7f0df6b2e1f43be6a266ba072a5ac6e4.png)](http://gyazo.com/7f0df6b2e1f43be6a266ba072a5ac6e4)
 
-4. Affymetrixのヒトのマイクロアレイの検索結果が表示されます。列見出しをクリックすると各項目でソートできます。表の中央にある「Samples」あるいは「Series」を2回クリックすると、登録されている実験データが多い順にソートされます。
+4. Affymetrixのヒトのマイクロアレイの検索結果が表示されます。列見出しをクリックすると、各項目でソートできます。表の中央にある「Samples」あるいは「Series」を2回クリックすると、登録されている実験データが多い順にソートされます。
 
  [![Gyazo](http://i.gyazo.com/7465f25b115b92b1b9195267b12f81b4.png)](http://gyazo.com/7465f25b115b92b1b9195267b12f81b4)
 
@@ -119,7 +123,7 @@
 
  [![Gyazo](http://i.gyazo.com/020666a58df1903d5532f62ffd9cf5f7.png)](http://gyazo.com/020666a58df1903d5532f62ffd9cf5f7)
 
-3. データセットに含まれるサンプルデータの一覧が表示されます。列見出しをクリックすると各項目でソートできます。このデータセットには、健常者 7名・アルコール性肝炎患者 15名の肝臓から得られた22個のサンプルデータからなることがわかります。
+3. データセットに含まれるサンプルデータの一覧が表示されます。列見出しをクリックすると、各項目でソートできます。このデータセットには、健常者 7名・アルコール性肝炎患者 15名の肝臓から得られた22個のサンプルデータからなることがわかります。
 
  [![Gyazo](http://i.gyazo.com/ad82f7f81091ab7cf300fdba8819bf96.png)](http://gyazo.com/ad82f7f81091ab7cf300fdba8819bf96)
 
@@ -176,7 +180,7 @@
 
 18. 「Save all results」 をクリックすると、結果をテキストで表示・保存できます。
 
- [![Gyazo](http://i.gyazo.com/36519a703f95ba99c58956785a5af499.png)](http://gyazo.com/36519a703f95ba99c58956785a5af499)
+ [![Gyazo](http://i.gyazo.com/62d32077159a1e775ccd6e1e73ea82f7.png)](http://gyazo.com/62d32077159a1e775ccd6e1e73ea82f7)
 
 19. Options タブをクリックすると、いくつかの設定を変更できます。左の項目は多重検定の補正法の選択です。デフォルトでは  "Benjamini & Hochberg" の方法が使われています。中央はデータの対数をとるかどうかの選択です。デフォルトでは自動検出で対数になります。右の項目はプラットフォームの注釈の選択です。"NCBI generated" がある場合はそれの方が信頼できます。
 
@@ -213,9 +217,9 @@
 ##### マイクロアレイデータの準備
 - サンプルデータとして、【実習2】で解析した遺伝子発現データを用います。このデータは、多重比較法（Benjamini & Hochberg）を指定して、有意水準1％未満かつ2倍以上発現差のあった遺伝子群のリストです。 
 
-     → 「健常者＞AH患者_遺伝子リスト」[GEO2R_Ctrl.txt](https://github.com/AJACS-training/AJACS53/blob/master/yoki/GEO2R_Ctrl.txt) 
+     → 「健常者＞AH患者_遺伝子リスト」[GEO2R_Ctrl.txt](https://github.com/yoki-ac/AJACS53/blob/patch-3/GEO2R_Ctrl.txt) 
      
-     → 「AH患者＞健常者_遺伝子リスト」[GEO2R_AH.txt](https://github.com/AJACS-training/AJACS53/blob/master/yoki/GEO2R_AH.txt) 
+     → 「AH患者＞健常者_遺伝子リスト」[GEO2R_AH.txt](https://github.com/yoki-ac/AJACS53/blob/patch-3/GEO2R_AH.txt) 
       
    （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
   
@@ -230,12 +234,12 @@
 
   [![Gyazo](http://i.gyazo.com/dd857b29d9b70382ad81c314a5dbbed8.png)](http://gyazo.com/dd857b29d9b70382ad81c314a5dbbed8)
 
-2. 画面左側バーで、「健常者＞AH患者_遺伝子リスト」のprobe IDをコピペ or ファイルを選択します。
+2. 画面左側バーで、「健常者＞AH患者_遺伝子リスト」のプローブ IDをコピペ or ファイルを選択します。
 
   [![Gyazo](http://i.gyazo.com/6805eef66646ac24747a172d511afab6.png)](http://gyazo.com/6805eef66646ac24747a172d511afab6)
 
 3. リストのIDの種類を選択します。 … 今回は、"AFFYMETRIX_3PRIME_IVT_ID" と "Gene List" を選択します。
-4. Submit List をクリックするとリストが読み込まれます。
+4. Submit List をクリックすると、リストが読み込まれます。
 
   [![Gyazo](http://i.gyazo.com/2b320b921e5c4854da042a74a93ebc8e.png)](http://gyazo.com/2b320b921e5c4854da042a74a93ebc8e)
 
@@ -257,11 +261,11 @@
 
   [![Gyazo](http://i.gyazo.com/f8dea1e2599210e3968e6d950426b649.png)](http://gyazo.com/f8dea1e2599210e3968e6d950426b649)
 
-10. 今回は、GOTERM_BP_ALL（BP = Biological Process）に注目します。「Chart」をクリックすると結果がポップアップされます。 
+10. 今回は、GOTERM_BP_ALL（BP = Biological Process）に注目します。「Chart」をクリックすると、結果がポップアップされます。 
 
   [![Gyazo](http://i.gyazo.com/02c93e0cb523a671ed2c4132308e7948.png)](http://gyazo.com/02c93e0cb523a671ed2c4132308e7948)
 
-11.  GOTERM_BP_ALL のチャートが表示されました。列見出しをクリックすると各項目でソートできます。「Download File」をクリックすると、結果をテキストで表示できます。 
+11.  GOTERM_BP_ALL のチャートが表示されました。列見出しをクリックすると、各項目でソートできます。「Download File」をクリックすると、結果をテキストで表示できます。 
 
   [![Gyazo](http://i.gyazo.com/c1dbf94268b2c67fee3f8754a6a9d706.png)](http://gyazo.com/c1dbf94268b2c67fee3f8754a6a9d706) 
  
@@ -299,6 +303,69 @@
  
 - DAVIDで得られた結果を踏まえ、「健常者とアルコール性肝炎患者」の肝臓では、どのような違いがあるのか考察してみましょう。
 
+---- 
+## ［予備］転写制御因子予測ツール TFactS の使い方
+### [TFactS](http://www.tfacts.org/)
+- 実験によって得られた数十～数千の遺伝子群の転写制御因子予測ツール
+- [http://www.tfacts.org/](http://www.tfacts.org/)
+- [TRED](http://www.tfacts.org/)、[TRRD](http://wwwmgs.bionet.nsc.ru/mgs/gnw/trrd/)、[RAZAR](http://www.pazar.info/)、[NFIregulomeDB](http://nfiregulome.ccr.buffalo.edu/basicquery1.0.php)などのデータベースから得られた遺伝子リストに加えて、Pubmedの文献情報から得られたTFactS独自の遺伝子リストをベースに解析します。
+- 遺伝子の転写因子結合配列情報からではなく、遺伝子リストの情報からそれら遺伝子群を制御する転写因子の予測が可能です。
+
+##### マイクロアレイデータの準備
+- サンプルデータは【実習3】と同様に、【実習2】で解析した遺伝子発現データから得られた遺伝子リストを用います。TFactS は Gene Symbol を使用するので、プローブ ID を Gene Symbol に変換した遺伝子リストを準備します。 
+
+     → 「健常者＞AH患者_遺伝子リスト」[DOWN_genes.txt](https://github.com/yoki-ac/test/blob/master/TFactS_DOWN_genes.txt) 
+     
+     → 「AH患者＞健常者_遺伝子リスト」[UP_genes.txt](https://github.com/yoki-ac/test/blob/master/TFactS_UP_genes.txt) 
+      
+   （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
+  
+- このデータから、どのような転写因子によって発現制御されているのかを TFactS を使って予測してみましょう！  
+
+####【実習4】TFactSを使って、遺伝子群を制御する転写因子を予測する
+
+1. 画面中央の「ENTER」をクリックします。
+
+  [![Gyazo](http://gyazo.com/784aac10a19fb747ff68d9a4abc7ea89.png)](http://gyazo.com/784aac10a19fb747ff68d9a4abc7ea89)
+  
+2. 画面左側バーで、「START Data Analysis」をクリックします。
+
+  [![Gyazo](http://gyazo.com/50c2d16017822f55f4bb02904f44e8be.png)](http://gyazo.com/50c2d16017822f55f4bb02904f44e8be)
+  
+3. Catalogue Selection を選択します。
+4. Sign-Less catalogue は Regulated Transcription Factors (TF)、Sign-Sensitive catalogue は Activated TF と  Repressed TF を解析します。…今回は "Sign-Less" を選択します。
+5. TFactS Mode では、"BatchTFactS"（遺伝子リストをzipファイルで一括アップロード）と "TFactS (Simple Mode)"（遺伝子リストをコピペしてアップロード） が選択できます。…今回は "TFactS (Simple Mode)" を選択します。
+
+  [![Gyazo](http://gyazo.com/ad3445f81e03348527b5c434b873f712.png)](http://gyazo.com/ad3445f81e03348527b5c434b873f712)
+  
+6. Input Data では、Analysis Name と Gene List を記入します。
+7. Analysis Name に "AJACS53（なんでも良い）"と記入し、UP genes と Down genes には UP_genes.txt と DOWN_genes.txt の遺伝子リストの Gene Symbol をそれぞれコピペします。
+8. Negative control と Thresholds はパラメーターを設定します。…今回は初期設定のまま実行します。
+9. 「GO」 をクリックすると、解析が実行されます。（※）
+
+  [![Gyazo](http://gyazo.com/2fac8f60f1f924ca4ccd168b7c6e0d14.png)](http://gyazo.com/2fac8f60f1f924ca4ccd168b7c6e0d14)
+  
+10. 解析結果のリンクが表示されました。
+
+  [![Gyazo](http://gyazo.com/30484a2b45f3a30d3dbe9d1c06db2c6a.png)](http://gyazo.com/30484a2b45f3a30d3dbe9d1c06db2c6a)
+  
+11. ①「Results (P-value Tables)」をクリックします。
+12. アップロードしたリストの遺伝子群を制御すると予測された転写因子が Regulated Transcription Factors として表示されます。
+
+  [![Gyazo](http://gyazo.com/40168830813c09c4ed42b66d723ca35e.png)](http://gyazo.com/40168830813c09c4ed42b66d723ca35e)
+  
+13. ②「Submitted Lists and the corresponding TFs」をクリックします。
+14. アップロードした遺伝子リストについて、個々の遺伝子に対応する転写因子が Gene List UP と Gene List DOWN としてそれぞれ表示されます。
+ - UP_genes
+
+  [![Gyazo](http://gyazo.com/fa95f9de141e888939bc5127d554b07e.png)](http://gyazo.com/fa95f9de141e888939bc5127d554b07e)
+  
+ - DOWN_genes
+
+  [![Gyazo](http://gyazo.com/75bff46b0d82ddd42ed73836934e255f.png)](http://gyazo.com/75bff46b0d82ddd42ed73836934e255f)
+  
+15. ③「Export results」 をクリックすると、すべての解析結果がzipファイルでダウンロードできます。ファイル名は Analysis Name で設定した "AJACS53" になります。
+16. Sign-Less catalogue で得られた Regulated TF の結果を踏まえ、 Sign-Sensitive catalogue で Activated TF と  Repressed TF も解析して、どのような違いがあるのか比較してみましょう。
 
 ----
 
