@@ -42,7 +42,7 @@
 - DDBJ Read Annotation Pipeline とは
     - [DDBJ Pipeline 基礎部](https://p.ddbj.nig.ac.jp)
     - [DDBJ Pipeline 高次処理部](https://p-galaxy.ddbj.nig.ac.jp/)
-    [![Gyazo](https://i.gyazo.com/c3e86f9c3b661bdfd6058938dd1a6852.png)](http://gyazo.com/c3e86f9c3b661bdfd6058938dd1a6852)
+    [![Gyazo](https://i.gyazo.com/279f45442c7be4aa5d10ffffde8300b8.png)](http://gyazo.com/279f45442c7be4aa5d10ffffde8300b8)
 	
 - DNApod: DNA Polymorphism AnnOtation Database とは   
     - [DNApod](http://tga.nig.ac.jp/dnapod/)
