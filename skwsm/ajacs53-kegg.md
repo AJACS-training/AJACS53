@@ -33,7 +33,15 @@
 
 ### GenomeNet 概要
 
+- ゲノム情報を基盤とした生命科学研究を促進するためのインターネットサービス
+- KEGGを主幹とするデータベース群と、それらデータを解析するための計算ツール群からなっている
+
 ### KEGG 概要
+
+- ゲノムや分子レベルの情報から細胞、個体、エコシステムといった生命システムレベルの機能を整理したデータベース
+- 遺伝子や化合物などの分子部品のデータベースと、それらをつなぐネットワークのデータベースからなっている
+
+[!Fig1(images/AJACS53_KEGG_overview1.png)](images/AJACS53_KEGG_overview1.png)
 
 ### KEGG Organism
 
@@ -48,6 +56,8 @@
 ### KEGG Mapper
 
 ####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
+
+- Pathway, BRITE, Module などへ、指定した遺伝子、
 
 ####【実習1】LinkDBを用いて、データベースIDの変換を行う。
 
