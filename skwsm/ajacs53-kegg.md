@@ -53,6 +53,20 @@
 
 ### KEGG Module
 
+### KAAS (KEGG Automatic Annotation Server)
+
+[![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_top1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_top1.png “KAAS Home”)
+
+- KEGG自動アノテーションサーバー [KAAS Home](http://www.genome.jp/tools/kaas/)
+- 入力:
+ - 大規模シークエンスによって得られた生物種のアミノ酸や塩基配列
+- 出力:
+ - 配列名とKOの対応表
+ - PATHWAYマップ
+ - BRITE階層分類
+
+[![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png “KAAS概要”)
+
 ### KEGG Mapper
 
 ####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
