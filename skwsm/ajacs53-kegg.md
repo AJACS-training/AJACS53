@@ -47,11 +47,11 @@
 1. [LinkDB Home](http://www.genome.jp/linkdb/) へアクセスする。
 2. データベースリンクダイアグラム中の各データベースを表す矩形をクリックし、どのようにデータベース間がリンクされているか調べてみる。（このダイアグラムでは、KEGG内データベースから外部のデータベースか、外部データベース間のリンクのみ表示される）。
 
-[![LinkDB Link Diagram]](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)
+[![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)
 
 3. ヒト遺伝子に関して、NCBI GENE と KEGG GENE の間の対応表を作成しダウンロードする。下図のように、from には、has （has は、Hono sapiens を意味する KEGGの生物種コード）を、to には、NCBI-GENE を入力し、downloadボタンを押す。
 
-[![LinkDB Link Diagram]](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)
+[![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)
 
 4. ダウンロードされたテキストファイルの内容を確認する。
 
