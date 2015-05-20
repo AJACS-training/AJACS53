@@ -36,11 +36,26 @@
 - ゲノム情報を基盤とした生命科学研究を促進するためのインターネットサービス
 - KEGGを主幹とするデータベース群と、それらデータを解析するための計算ツール群からなっている
 
+----
+
 #### LinkDB
 
 [![LinkDB Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)
 
 ####【実習1】LinkDBを用いて、データベースIDの変換を行う。
+
+1. [LinkDB Home](http://www.genome.jp/linkdb/) へアクセスする。
+2. データベースリンクダイアグラム中の各データベースを表す矩形をクリックし、どのようにデータベース間がリンクされているか調べてみる。（このダイアグラムでは、KEGG内データベースから外部のデータベースか、外部データベース間のリンクのみ表示される）。
+
+[![LinkDB Link Diagram]](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)
+
+3. ヒト遺伝子に関して、NCBI GENE と KEGG GENE の間の対応表を作成しダウンロードする。下図のように、from には、has （has は、Hono sapiens を意味する KEGGの生物種コード）を、to には、NCBI-GENE を入力し、downloadボタンを押す。
+
+[![LinkDB Link Diagram]](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)
+
+4. ダウンロードされたテキストファイルの内容を確認する。
+
+----
 
 ### KEGG 概要
 
@@ -78,9 +93,9 @@
  - BRITE階層分類
 
 - 配列類似性が高いというだけでなく、（片方向）ベストヒットである遺伝子同士が、よりオーソログの関係にある可能性が高く、双方向ベストヒットである遺伝子がさらにオーソログの関係にある可能性が高い
- - より詳しくは、KAAS Helpページを参照 [!KAAS Help(http://www.genome.jp/tools/kaas/help.html)](http://www.genome.jp/tools/kaas/help.html)
+ - より詳しくは、[KAAS Help](http://www.genome.jp/tools/kaas/help.html) ページを参照
 
-[![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png “KAAS概要”)
+[![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png “KAAS概要”) 
 
 ### BlastKOALA / GhostKOALA
 
