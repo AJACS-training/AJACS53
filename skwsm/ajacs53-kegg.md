@@ -45,6 +45,7 @@
 ####【実習1】LinkDBを用いて、データベースIDの変換を行う。
 
 1. [LinkDB Home](http://www.genome.jp/linkdb/) へアクセスする。
+
 2. データベースリンクダイアグラム中の各データベースを表す矩形をクリックし、どのようにデータベース間がリンクされているか調べてみる。（このダイアグラムでは、KEGG内データベースから外部のデータベースか、外部データベース間のリンクのみ表示される）。
 
 [![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)
@@ -113,13 +114,16 @@
 [![KEGG Mapper - Annotate Sequence by BlastKOALA](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_Mapper_Sequence_Annotation_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_Mapper_Sequence_Annotation_Home.png)
 
 2. Example として準備されている、sequence.txt をダウンロードし、Choose File ボタンをクリックして選択する（もしくは、sequence.txt を別途ブラウザ上で表示し、コピーしたのち、Enter FASTA Sequence テキストボックスへペーストする）
+
 3. Select GENES family/genus dataset to be searched メニューで、Select Family/Genus ボタンをクリックする。別ウィンドウとして、Family/Genus を選択するページが表示されるので、Buchnera を見つけてクリックする
+
 4. 元のページに戻るので、Exec ボタンを押す
 
 5. しばらく待つと、以下のような結果ページが表示される
 
 [![SequenceAnnotationResult](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)
 
+----
 
 ### KEGG Mapper
 
