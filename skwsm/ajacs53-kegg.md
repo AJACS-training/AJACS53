@@ -47,7 +47,7 @@
 
 ### KEGG Mapper
 
-[KEGG Mapper](http://www.genome.jp/kegg/mapper.html)
+####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
 
 ####【実習1】LinkDBを用いて、データベースIDの変換を行う。
 
