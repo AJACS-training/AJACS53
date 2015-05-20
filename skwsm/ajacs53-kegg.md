@@ -31,8 +31,22 @@
 - [「KEGG/GenomeNetのWebサービスの紹介」(2014年12月AJACS51岩手)](http://motdb.dbcls.jp/?plugin=attach&pcmd=open&file=KEGG_2014_12_slide.pdf&refer=AJACS51) 
 - [「KEGG/GenomeNetの利用法」(2013年11月6日)](http://motdb.dbcls.jp/?plugin=attach&pcmd=open&file=KEGG_2013_11.pdf&refer=AJACS51) 
 
-####【実習1】
+### GenomeNet 概要
 
-####【実習2】
+### KEGG 概要
 
-####【実習2】
+### KEGG Organism
+
+### KEGG Genes
+
+### KEGG Orthology (KO)
+
+### KEGG Pathway
+
+### KEGG Module
+
+####【実習1】LinkDBを用いて、データベースIDの変換を行う。
+
+####【実習2】KAASを用いて、自動遺伝子アノテーションを行う。
+
+####【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
