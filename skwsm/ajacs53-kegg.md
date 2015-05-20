@@ -45,6 +45,10 @@
 
 ### KEGG Module
 
+### KEGG Mapper
+
+[KEGG Mapper](http://www.genome.jp/kegg/mapper.html)
+
 ####【実習1】LinkDBを用いて、データベースIDの変換を行う。
 
 ####【実習2】KAASを用いて、自動遺伝子アノテーションを行う。
