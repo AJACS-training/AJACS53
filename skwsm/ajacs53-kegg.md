@@ -41,7 +41,7 @@
 - ゲノムや分子レベルの情報から細胞、個体、エコシステムといった生命システムレベルの機能を整理したデータベース
 - 遺伝子や化合物などの分子部品のデータベースと、それらをつなぐネットワークのデータベースからなっている
 
-[!Fig1(images/AJACS53_KEGG_overview1.png)](images/AJACS53_KEGG_overview1.png)
+[!Fig1(https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)
 
 ### KEGG Organism
 
