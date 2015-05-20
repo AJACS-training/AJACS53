@@ -45,6 +45,7 @@
 ####【実習1】LinkDBを用いて、データベースIDの変換を行う。
 
 1. [LinkDB Home](http://www.genome.jp/linkdb/) へアクセスする。
+
 2. データベースリンクダイアグラム中の各データベースを表す矩形をクリックし、どのようにデータベース間がリンクされているか調べてみる。（このダイアグラムでは、KEGG内データベースから外部のデータベースか、外部データベース間のリンクのみ表示される）。
 
 [![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)
