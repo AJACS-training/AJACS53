@@ -8,7 +8,8 @@
 
 ----
 
-これは統合データベース講習会 AJACS御茶ノ水「遺伝子発現DB・ウェブツールの使い方 基礎編」の資料です。  
+これは統合データベース講習会 AJACS御茶ノ水「遺伝子発現DB・ウェブツールの使い方 基礎編」の資料です。
+続いて、講習予定の[応用・実践編](https://github.com/AJACS-training/AJACS53/blob/master/yoki/yoki.md) があります。
 講習会全体のプログラムは[こちら](http://events.biosciencedbc.jp/training/ajacs53)です。  
 
 ----
