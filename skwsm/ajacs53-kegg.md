@@ -109,19 +109,15 @@
 
 ####【実習4】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
 
+
 1. [KEGG Mapper - Annotate Sequence by BlastKOALA](http://www.kegg.jp/kegg/tool/annotate_sequence.html) にアクセスする
-
 ![KEGG Mapper - Annotate Sequence by BlastKOALA](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_Mapper_Sequence_Annotation_Home.png)
-
 2. Example として準備されている、sequence.txt をダウンロードし、Choose File ボタンをクリックして選択する（もしくは、sequence.txt を別途ブラウザ上で表示し、コピーしたのち、Enter FASTA Sequence テキストボックスへペーストする）
-
 3. Select GENES family/genus dataset to be searched メニューで、Select Family/Genus ボタンをクリックする。別ウィンドウとして、Family/Genus を選択するページが表示されるので、Buchnera を見つけてクリックする
-
 4. 元のページに戻るので、Exec ボタンを押す
-
 5. しばらく待つと、以下のような結果ページが表示される
-
 [![SequenceAnnotationResult](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)
+
 
 ----
 
