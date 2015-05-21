@@ -195,6 +195,7 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 
 ### KEGG Module
 
+- [KEGG Module Home](http://www.genome.jp/kegg/module.html)
 - Mで始まるIDで管理されている
 - PATHWAYマップより小さい単位
 - 複数のタンパク質から構成される、機能単位
