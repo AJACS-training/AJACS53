@@ -177,12 +177,14 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 #### 一般的なKEGGパスウェイ解析の流れ
 
 - ゲノム既知生物種の場合
+
 1. 先にパスウェイにマップしたい遺伝子IDセットを作成（例：有意に遺伝子発現が変動した遺伝子IDセット）
 2. それら遺伝子IDをKEGG GENESのIDに変換（ID変換表はLinkDBで作成可能）
 3. KEGG Mapper Pathway reconstruction サービス等でパスウェイ再構築を行う
 
 
 - ゲノム未知生物種の場合
+
 1. 先にパスウェイにマップしたい遺伝子配列セットを作成（例：新規に読んだゲノムからの遺伝子配列セット）
 2. KAAS, BlastKOALA, GhostKOALA などで、K番号割り振りとパスウェイ再構築を行う
 
@@ -202,8 +204,7 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 
 ### KEGG Mapper
 
-####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
-
+- [KEGG Mapper Home: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
 - Pathway, BRITE, Module などへ、指定した遺伝子、化合物等をマップするサービス一覧
 
 ####【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
