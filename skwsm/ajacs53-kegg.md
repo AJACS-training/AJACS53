@@ -75,7 +75,7 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 
 1. [GenomeNet Home](http://www.genome.jp/)へアクセスする。
 [![GenomeNet Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)
-2. ページ上部のテキスト検索ボックスに、好きなキーワードを入れて検索してみる。DB名:エントリーID という形式で入力するとbgetモード（例 eco:b0002）、それ以外では、bfindモードで検索が行われる。
+2. ページ上部のテキスト検索ボックスに、好きなキーワードを入れて検索してみる。DB名:エントリーID という形式で入力するとbgetモード（例 eco:b0002）、それ以外では、bfindモードで検索が行われる(例 Histidine kinase, Cyanamide等)。
 
 
 ----
@@ -243,7 +243,7 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 6. 次にPathway, Module, BRITE などがどのように再構築されたか確認する
 7. Reconstruct Module をクリックすると、再構築されたモジュール一覧が表示される。
 [![BlastKOALA Result Module List](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)
-8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176 (Assimilatory sulfate reduction, sulfate=>H2S モジュール)
+8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176: Assimilatory sulfate reduction, sulfate=>H2S モジュール
 [![M00176](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)
 9. モジュールエントリーページの、ortholog table ボタンをクリックして、生物種間でのそのモジュールの保存具合を見てみる。
 [![M00176 OrthologTable1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)
