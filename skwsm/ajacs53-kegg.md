@@ -35,6 +35,7 @@
 
 - ゲノム情報を基盤とした生命科学研究を促進するためのインターネットサービス
 - KEGGを主幹とするデータベース群と、それらデータを解析するための計算ツール群からなっている
+ - [GenomeNet Home](http://www.genome.jp/)
 
 ----
 
@@ -108,6 +109,39 @@
 - 生物種間での保存度合い、複合体の形成、オペロン等を考慮し、オーソロググループの組み合わせで定義されている
 
 
+### KEGG Mapper
+
+####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
+
+- Pathway, BRITE, Module などへ、指定した遺伝子、化合物等をマップするサービス一覧
+
+####【実習2】KEGG Mapperを用いて、パスウェイ再構築を行う。
+
+1. [KEGG Mapper - Reconstruct Pathway](http://www.kegg.jp/kegg/tool/map_pathway.html)にアクセスする。
+2. 例として準備されている、genelist.txt (single organism)の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
+[![Reconstruction pathway Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway1.png)
+3. Exec ボタンを押す
+4. 結果を確認する
+[![Reconstruction pathway list Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result1.png)
+5. 好きなパスウェイをクリックしてどのようにマップされたか確認する。
+[![Reconstruction pathway example](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map2.png)
+6. 次に、例として準備されている、genelist2.txt (multipule organisms)の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
+[![Reconstruction pathway Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway2.png)
+7. 結果を確認する
+[![Reconstruction pathway list Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result2.png)
+8. 好きなパスウェイをクリックしてどのようにマップされたか確認する。
+[![Reconstruction pathway example](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map1.png)
+
+
+
+####【実習3】KEGG Mapperを用いて、モジュール再構築を行う。
+
+1. [KEGG Mapper - Reconstruct Module](http://www.kegg.jp/kegg/tool/map_module.html)にアクセスする。
+2. 例として準備されている、genelist.txt の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
+[![Reconstruction module Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module1.png)
+3. View complete modules and 1 or 2 block missing modules を選択し、Exec ボタンを押す
+4. 結果を確認する
+
 ----
 
 ### KAAS (KEGG Automatic Annotation Server)
@@ -127,7 +161,9 @@
 
 [![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png “KAAS概要”) 
 
-####【実習2】KAASを用いて、自動遺伝子アノテーションを行う。
+####【実習4】KAASを用いて、自動遺伝子アノテーションを行う。
+
+----
 
 ### BlastKOALA / GhostKOALA
 
@@ -138,7 +174,7 @@
  - KAAS の single-best に近い
  - 検索対象の配列データベースを絞っているため、KAASより高速にK番号の割り当てが行える。GHOSTX の方が BLASTより高速なため、BlastKOALA より GhostKOALAの方がさらに高速である。
 
-####【実習3】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
+####【実習5】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
 
 
 1. [KEGG Mapper - Annotate Sequence by BlastKOALA](http://www.kegg.jp/kegg/tool/annotate_sequence.html) にアクセスする
@@ -148,41 +184,9 @@
 4. 元のページに戻るので、Exec ボタンを押す
 5. しばらく待つと、以下のような結果ページが表示される
 [![SequenceAnnotationResult](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)
-
+6. Pathway, Module, BRITE などがどのように再構築されたか確認する
 
 ----
 
-### KEGG Mapper
-
-####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
-
-- Pathway, BRITE, Module などへ、指定した遺伝子、化合物等をマップするサービス一覧
-
-####【実習4】KEGG Mapperを用いて、パスウェイ再構築を行う。
-
-1. [KEGG Mapper - Reconstruct Pathway](http://www.kegg.jp/kegg/tool/map_pathway.html)にアクセスする。
-2. 例として準備されている、genelist.txt (single organism)の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
-[![Reconstruction pathway Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway1.png)
-3. Exec ボタンを押す
-4. 結果を確認する
-[![Reconstruction pathway list Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result1.png)
-5. 好きなパスウェイをクリックしてどのようにマップされたか確認する。
-[![Reconstruction pathway example](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map2.png)
-6. 次に、例として準備されている、genelist2.txt (multipule organisms)の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
-[![Reconstruction pathway Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway2.png)
-7. 結果を確認する
-[![Reconstruction pathway list Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result2.png)
-8. 好きなパスウェイをクリックしてどのようにマップされたか確認する。
-[![Reconstruction pathway example](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map1.png)
-
-
-
-####【実習5】KEGG Mapperを用いて、モジュール再構築を行う。
-
-1. [KEGG Mapper - Reconstruct Module](http://www.kegg.jp/kegg/tool/map_module.html)にアクセスする。
-2. 例として準備されている、genelist.txt の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
-[![Reconstruction module Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module1.png)
-3. View complete modules and 1 or 2 block missing modules を選択し、Exec ボタンを押す
-4. 結果を確認する
 
 
