@@ -244,4 +244,4 @@
   
 ---
 
-[答え合わせ](https://github.com/hiromasaono/training/blob/master/AJACS53/answer.md)
+[答え合わせ](https://github.com/AJACS-training/AJACS53/blob/master/hono/answer.md)
