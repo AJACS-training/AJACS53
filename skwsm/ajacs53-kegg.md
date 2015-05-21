@@ -205,7 +205,11 @@
 4. 元のページに戻るので、Exec ボタンを押す
 5. しばらく待つと、以下のような結果ページが表示される
 [![SequenceAnnotationResult](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)
-6. Pathway, Module, BRITE などがどのように再構築されたか確認する
+6. 次にPathway, Module, BRITE などがどのように再構築されたか確認する
+7. Reconstruct Module をクリックすると、再構築されたモジュール一覧が表示される。
+[![BlastKOALA Result Module List](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)
+8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176 (Assimilatory sulfate reduction, sulfate => H2S モジュール)
+[![M00176](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)
 
 ----
 
