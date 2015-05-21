@@ -61,15 +61,20 @@
 
 [![Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)
 
-#### KEGG Organisms
+
+----
+
+### KEGG Organisms
 
 - KEGG に含まれる生物種カタログ
 - KEGG Table of Contents の KEGG Organisms をクリック
 [![KEGG2 Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG2_2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG2_2.png)
 
+[![KEGG Genomes](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_Genomes.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_Genomes.png)
 
+----
 
-#### KEGG Genes
+### KEGG Genes
 
 #### KEGG Orthology (KO)
 
