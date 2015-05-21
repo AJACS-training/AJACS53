@@ -56,7 +56,7 @@
 
 [![LinkDB Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)
 
-####【実習1】LinkDBを用いて、データベースIDの変換を行う。
+####【実習2】LinkDBを用いて、データベースIDの変換を行う。
 
 1. [LinkDB Home](http://www.genome.jp/linkdb/) へアクセスする。
 2. データベースリンクダイアグラム中の各データベースを表す矩形をクリックし、どのようにデータベース間がリンクされているか調べてみる。（このダイアグラムでは、KEGG内データベースから外部のデータベースか、外部データベース間のリンクのみ表示される）。
@@ -135,7 +135,7 @@
 
 - Pathway, BRITE, Module などへ、指定した遺伝子、化合物等をマップするサービス一覧
 
-####【実習2】KEGG Mapperを用いて、パスウェイ再構築を行う。
+####【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
 
 1. [KEGG Mapper - Reconstruct Pathway](http://www.kegg.jp/kegg/tool/map_pathway.html)にアクセスする。
 2. 例として準備されている、genelist.txt (single organism)の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
@@ -154,7 +154,7 @@
 
 
 
-####【実習3】KEGG Mapperを用いて、モジュール再構築を行う。
+####【実習4】KEGG Mapperを用いて、モジュール再構築を行う。
 
 1. [KEGG Mapper - Reconstruct Module](http://www.kegg.jp/kegg/tool/map_module.html)にアクセスする。
 2. 例として準備されている、genelist.txt の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
@@ -181,9 +181,7 @@
 
 [![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png “KAAS概要”) 
 
-####【実習4】KAASを用いて、自動遺伝子アノテーションを行う。
-
-1.
+####【実習5】KAASを用いて、自動遺伝子アノテーションを行う。
 
 
 ----
@@ -197,7 +195,7 @@
  - KAAS の single-best に近い
  - 検索対象の配列データベースを絞っているため、KAASより高速にK番号の割り当てが行える。GHOSTX の方が BLASTより高速なため、BlastKOALA より GhostKOALAの方がさらに高速である。
 
-####【実習5】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
+####【実習6】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
 
 
 1. [KEGG Mapper - Annotate Sequence by BlastKOALA](http://www.kegg.jp/kegg/tool/annotate_sequence.html) にアクセスする
