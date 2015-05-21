@@ -313,6 +313,7 @@
 
 ##### マイクロアレイデータの準備
 - サンプルデータは【実習3】と同様に、【実習2】で解析した遺伝子発現データから得られた遺伝子リストを用います。TFactS は Gene Symbol を使用するので、プローブ ID を Gene Symbol に変換した遺伝子リストを準備します。 
+- 遺伝子のIDをSymbolに変換するには、DAVIDのGene ID Conversion Tool が便利です。[統合TV 解説](http://t.co/MiVPIhwZyB)
 
      → 「健常者＞AH患者_遺伝子リスト」[DOWN_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/yoki/TFactS_DOWN_genes.txt) 
      
