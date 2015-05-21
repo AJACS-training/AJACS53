@@ -47,7 +47,7 @@
 
 1. [GenomeNet Home](http://www.genome.jp/)へアクセスする。
 [![GenomeNet Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)
-2. ページ上部のテキスト検索ボックスに、好きなキーワードを入れて検索してみる。(例)
+2. ページ上部のテキスト検索ボックスに、好きなキーワードを入れて検索してみる。DB名:エントリーID という形式で入力するとbgetモード（例 eco:b0002）、それ以外では、bfindモードで検索が行われる。
 
 
 ----
