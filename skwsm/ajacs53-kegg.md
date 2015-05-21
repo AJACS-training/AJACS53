@@ -281,7 +281,7 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 6. 次にPathway, Module, BRITE などがどのように再構築されたか確認する
 7. Reconstruct Module をクリックすると、再構築されたモジュール一覧が表示される。
 [![BlastKOALA Result Module List](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)
-8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176: Assimilatory sulfate reduction, sulfate=>H2S モジュール
+8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176モジュール
 [![M00176](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)
 9. モジュールエントリーページの、ortholog table ボタンをクリックして、生物種間でのそのモジュールの保存具合を見てみる。
 [![M00176 OrthologTable1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)
