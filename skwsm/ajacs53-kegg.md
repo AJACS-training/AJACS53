@@ -45,15 +45,10 @@
 ####【実習1】LinkDBを用いて、データベースIDの変換を行う。
 
 1. [LinkDB Home](http://www.genome.jp/linkdb/) へアクセスする。
-
 2. データベースリンクダイアグラム中の各データベースを表す矩形をクリックし、どのようにデータベース間がリンクされているか調べてみる。（このダイアグラムでは、KEGG内データベースから外部のデータベースか、外部データベース間のリンクのみ表示される）。
-
 [![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)
-
 3. ヒト遺伝子に関して、NCBI GENE と KEGG GENE の間の対応表を作成しダウンロードする。下図のように、from には、has （has は、Hono sapiens を意味する KEGGの生物種コード）を、to には、NCBI-GENE を入力し、downloadボタンを押す。
-
 [![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)
-
 4. ダウンロードされたテキストファイルの内容を確認する。
 
 ----
@@ -62,10 +57,17 @@
 
 - ゲノムや分子レベルの情報から細胞、個体、エコシステムといった生命システムレベルの機能を整理したデータベース
 - 遺伝子や化合物などの分子部品のデータベースと、それらをつなぐネットワークのデータベースからなっている
+ - [KEGG Table of Contents](http://www.genome.jp/kegg/kegg2.html)
 
 [![Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)
 
-#### KEGG Organism
+#### KEGG Organisms
+
+- KEGG に含まれる生物種カタログ
+- KEGG Table of Contents の KEGG Organisms をクリック
+[![KEGG2 Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG2_2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG2_2.png)
+
+
 
 #### KEGG Genes
 
@@ -78,6 +80,15 @@
 [![Pathway_Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway1.png)
 
 [![Pathway_Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)
+
+#### 一般的なKEGGパスウェイ解析の流れ
+
+1. 先にパスウェイにマップしたい遺伝子IDセットを作成（例：有意に遺伝子発現が変動した遺伝子IDセット）
+2. それら遺伝子IDをKEGG GENESのIDに変換（ID変換表はLinkDBで作成可能）
+3. KEGG Mapper Pathway reconstruction サービス等でパスウェイ再構築を行う
+
+1. 先にパスウェイにマップしたい遺伝子配列セットを作成（例：新規に読んだゲノムからの遺伝子配列セット）
+2. KAAS, BlastKOALA, GhostKOALA などで、K番号割り振りとパスウェイ再構築を行う
 
 ### KEGG Module
 
@@ -98,6 +109,8 @@
 
 [![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png “KAAS概要”) 
 
+####【実習2】KAASを用いて、自動遺伝子アノテーションを行う。
+
 ### BlastKOALA / GhostKOALA
 
 [![BlastKOALA Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_BlastKOALA_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_BlastKOALA_Home.png)
@@ -107,7 +120,7 @@
  - KAAS の single-best に近い
  - 検索対象の配列データベースを絞っているため、KAASより高速にK番号の割り当てが行える。GHOSTX の方が BLASTより高速なため、BlastKOALA より GhostKOALAの方がさらに高速である。
 
-####【実習4】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
+####【実習3】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
 
 
 1. [KEGG Mapper - Annotate Sequence by BlastKOALA](http://www.kegg.jp/kegg/tool/annotate_sequence.html) にアクセスする
@@ -123,19 +136,20 @@
 
 ### KEGG Mapper
 
-
-
 ####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
 
-- Pathway, BRITE, Module などへ、指定した遺伝子、
+- Pathway, BRITE, Module などへ、指定した遺伝子、化合物等をマップするサービス一覧
 
-####【実習1】LinkDBを用いて、データベースIDの変換を行う。
+####【実習4】KEGG Mapperを用いて、パスウェイ再構築を行う。
 
-####【実習2】KAASを用いて、自動遺伝子アノテーションを行う。
+1. 
 
-####【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
+####【実習5】KEGG Mapperを用いて、モジュール再構築を行う。
 
-####【実習4】BlastKOALA / GhostKOALAを用いて、自動遺伝子アノテーション／パスウェイ再構築を行う。
-
+1. [KEGG Mapper - Reconstruct Module](http://www.kegg.jp/kegg/tool/map_module.html)にアクセスする。
+2. 例として準備されている、genelist.txt の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
+[![Reconstruction module Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module1.png)
+3. View complete modules and 1 or 2 block missing modules を選択し、Exec ボタンを押す
+4. 結果を確認する
 
 
