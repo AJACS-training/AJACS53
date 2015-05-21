@@ -82,6 +82,9 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 
 ### LinkDB
 
+- データベースエントリーID間のリンク情報を収集したデータベース
+- ID変換にも利用可能
+
 [![LinkDB Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)
 
 ####【実習2】LinkDBを用いて、データベースIDの変換を行う。
@@ -92,6 +95,28 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 3. ヒト遺伝子に関して、NCBI GENE と KEGG GENE の間の対応表を作成しダウンロードする。下図のように、from には、has （has は、Hono sapiens を意味する KEGGの生物種コード）を、to には、NCBI-GENE を入力し、downloadボタンを押す。
 [![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)
 4. ダウンロードされたテキストファイルの内容を確認する。
+
+```
+ncbi-geneid:1   hsa:1   equivalent
+ncbi-geneid:10  hsa:10  equivalent
+ncbi-geneid:100 hsa:100 equivalent
+ncbi-geneid:1000        hsa:1000        equivalent
+ncbi-geneid:10000       hsa:10000       equivalent
+ncbi-geneid:100008586   hsa:100008586   equivalent
+ncbi-geneid:100008587   hsa:100008587   equivalent
+ncbi-geneid:100008588   hsa:100008588   equivalent
+ncbi-geneid:100008589   hsa:100008589   equivalent
+ncbi-geneid:100009613   hsa:100009613   equivalent
+ncbi-geneid:100009676   hsa:100009676   equivalent
+ncbi-geneid:10001       hsa:10001       equivalent
+ncbi-geneid:10002       hsa:10002       equivalent
+ncbi-geneid:10003       hsa:10003       equivalent
+ncbi-geneid:100033413   hsa:100033413   equivalent
+ncbi-geneid:100033414   hsa:100033414   equivalent
+ncbi-geneid:100033415   hsa:100033415   equivalent
+ncbi-geneid:100033416   hsa:100033416   equivalent
+
+```
 
 ----
 
@@ -121,6 +146,8 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 ### KEGG Genes
 
 - 生物種毎に、遺伝子・タンパク質配列を集めたデータベース
+
+[![KEGG GENES](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_GENES1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_GENES1.png)
 
 ----
 
