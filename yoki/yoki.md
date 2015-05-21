@@ -217,9 +217,9 @@
 ##### マイクロアレイデータの準備
 - サンプルデータとして、【実習2】で解析した遺伝子発現データを用います。このデータは、多重比較法（Benjamini & Hochberg）を指定して、有意水準1％未満かつ2倍以上発現差のあった遺伝子群のリストです。 
 
-     → 「健常者＞AH患者_遺伝子リスト」[GEO2R_Ctrl.txt](https://github.com/yoki-ac/AJACS53/blob/patch-3/GEO2R_Ctrl.txt) 
+     → 「健常者＞AH患者_遺伝子リスト」[GEO2R_Ctrl.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/yoki/GEO2R_Ctrl.txt) 
      
-     → 「AH患者＞健常者_遺伝子リスト」[GEO2R_AH.txt](https://github.com/yoki-ac/AJACS53/blob/patch-3/GEO2R_AH.txt) 
+     → 「AH患者＞健常者_遺伝子リスト」[GEO2R_AH.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/yoki/GEO2R_AH.txt) 
       
    （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
   
@@ -314,9 +314,9 @@
 ##### マイクロアレイデータの準備
 - サンプルデータは【実習3】と同様に、【実習2】で解析した遺伝子発現データから得られた遺伝子リストを用います。TFactS は Gene Symbol を使用するので、プローブ ID を Gene Symbol に変換した遺伝子リストを準備します。 
 
-     → 「健常者＞AH患者_遺伝子リスト」[DOWN_genes.txt](https://github.com/yoki-ac/test/blob/master/TFactS_DOWN_genes.txt) 
+     → 「健常者＞AH患者_遺伝子リスト」[DOWN_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/TFactS_DOWN_genes.txt) 
      
-     → 「AH患者＞健常者_遺伝子リスト」[UP_genes.txt](https://github.com/yoki-ac/test/blob/master/TFactS_UP_genes.txt) 
+     → 「AH患者＞健常者_遺伝子リスト」[UP_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/FactS_UP_genes.txt) 
       
    （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
   
