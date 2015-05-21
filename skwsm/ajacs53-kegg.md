@@ -286,6 +286,7 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 9. モジュールエントリーページの、ortholog table ボタンをクリックして、生物種間でのそのモジュールの保存具合を見てみる。
 [![M00176 OrthologTable1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)
 [![M00176 OrthologTable1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table2.png)
+10. また、1 block missing や、2 block missing のオーソログテーブルや、タクソノミー（Tのアイコン）を見てみる。
 
 ----
 
