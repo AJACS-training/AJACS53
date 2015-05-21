@@ -159,6 +159,8 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 
 ### KEGG Pathway
 
+- [KEGG Pathway Home](http://www.genome.jp/kegg/pathway.html)
+
 [![Pathway_Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway1.png)
 
 [![Pathway_Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)
@@ -166,6 +168,7 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 
 ### KEGG BRITE
 
+- [KEGG BRITE Home](http://www.genome.jp/kegg/brite.html)
 - タンパク質の機能や、様々な知識の階層分類（タンパクファミリー、薬、病気、細胞、等）
 
 [![KEGG BRITE Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_BRITE_HOME.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_BRITE_HOME.png)
