@@ -139,12 +139,18 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 
 #### 一般的なKEGGパスウェイ解析の流れ
 
+- ゲノム既知生物種の場合
 1. 先にパスウェイにマップしたい遺伝子IDセットを作成（例：有意に遺伝子発現が変動した遺伝子IDセット）
 2. それら遺伝子IDをKEGG GENESのIDに変換（ID変換表はLinkDBで作成可能）
 3. KEGG Mapper Pathway reconstruction サービス等でパスウェイ再構築を行う
 
+
+- ゲノム未知生物種の場合
 1. 先にパスウェイにマップしたい遺伝子配列セットを作成（例：新規に読んだゲノムからの遺伝子配列セット）
 2. KAAS, BlastKOALA, GhostKOALA などで、K番号割り振りとパスウェイ再構築を行う
+
+[![KEGG Pathway Analysis](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway_Analysis.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway_Analysis.png)
+
 
 ----
 
@@ -210,6 +216,7 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 [![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png “KAAS概要”) 
 
 ####【実習5】KAASを用いて、自動遺伝子アノテーションを行う。
+
 
 
 ----
