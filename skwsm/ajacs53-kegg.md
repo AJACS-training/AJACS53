@@ -34,6 +34,7 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
  - KEGG Genes
  - KEGG Orthology
  - KEGG Pathway
+ - KEGG BRITE
  - KEGG Module
  - KEGG Mapper
    - 【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
@@ -176,12 +177,14 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 #### 一般的なKEGGパスウェイ解析の流れ
 
 - ゲノム既知生物種の場合
+
 1. 先にパスウェイにマップしたい遺伝子IDセットを作成（例：有意に遺伝子発現が変動した遺伝子IDセット）
 2. それら遺伝子IDをKEGG GENESのIDに変換（ID変換表はLinkDBで作成可能）
 3. KEGG Mapper Pathway reconstruction サービス等でパスウェイ再構築を行う
 
 
 - ゲノム未知生物種の場合
+
 1. 先にパスウェイにマップしたい遺伝子配列セットを作成（例：新規に読んだゲノムからの遺伝子配列セット）
 2. KAAS, BlastKOALA, GhostKOALA などで、K番号割り振りとパスウェイ再構築を行う
 
@@ -192,6 +195,7 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 
 ### KEGG Module
 
+- [KEGG Module Home](http://www.genome.jp/kegg/module.html)
 - Mで始まるIDで管理されている
 - PATHWAYマップより小さい単位
 - 複数のタンパク質から構成される、機能単位
@@ -201,8 +205,7 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 
 ### KEGG Mapper
 
-####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
-
+- [KEGG Mapper Home](http://www.genome.jp/kegg/mapper.html)
 - Pathway, BRITE, Module などへ、指定した遺伝子、化合物等をマップするサービス一覧
 
 ####【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
@@ -253,7 +256,7 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 
 ####【実習5】KAASを用いて、自動遺伝子アノテーションを行う。
 
-
+- 時間がかかるため今回はやりません。
 
 ----
 
@@ -279,11 +282,12 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 6. 次にPathway, Module, BRITE などがどのように再構築されたか確認する
 7. Reconstruct Module をクリックすると、再構築されたモジュール一覧が表示される。
 [![BlastKOALA Result Module List](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)
-8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176: Assimilatory sulfate reduction, sulfate=>H2S モジュール
+8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176モジュール
 [![M00176](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)
 9. モジュールエントリーページの、ortholog table ボタンをクリックして、生物種間でのそのモジュールの保存具合を見てみる。
 [![M00176 OrthologTable1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)
 [![M00176 OrthologTable1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table2.png)
+10. また、1 block missing や、2 block missing のオーソログテーブルや、タクソノミー（Tのアイコン）を見てみる。
 
 ----
 
