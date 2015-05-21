@@ -34,12 +34,25 @@
 ### GenomeNet 概要
 
 - ゲノム情報を基盤とした生命科学研究を促進するためのインターネットサービス
-- KEGGを主幹とするデータベース群と、それらデータを解析するための計算ツール群からなっている
+- KEGGを中心とするデータベース群と、それらデータを解析するための計算ツール群からなっている
  - [GenomeNet Home](http://www.genome.jp/)
+
+
+### bget/bfind
+
+- bget: GenomeNetのデータベースエントリーID検索
+- bfind: GenomeNetのデータベースに対するキーワード検索
+
+####【実習1】bget/bfind検索を体験する
+
+1. [GenomeNet Home](http://www.genome.jp/)へアクセスする。
+[![GenomeNet Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)
+2. ページ上部のテキスト検索ボックスに、好きなキーワードを入れて検索してみる。(例)
+
 
 ----
 
-#### LinkDB
+### LinkDB
 
 [![LinkDB Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)
 
@@ -59,13 +72,15 @@
 - ゲノムや分子レベルの情報から細胞、個体、エコシステムといった生命システムレベルの機能を整理したデータベース
 - 遺伝子や化合物などの分子部品のデータベースと、それらをつなぐネットワークのデータベースからなっている
  - [KEGG Table of Contents](http://www.genome.jp/kegg/kegg2.html)
+- KEGGのパスウェイマップでは、色が様々な意味を持っている
+ - [KEGG color codes](http://www.genome.jp/kegg/kegg1c.html)
 
 [![Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)
 
 
 ----
 
-### KEGG Organisms
+### KEGG Organisms / KEGG Genomes
 
 - KEGG に含まれる生物種カタログ
 - KEGG Table of Contents の KEGG Organisms をクリック
@@ -76,6 +91,10 @@
 ----
 
 ### KEGG Genes
+
+- 生物種毎に、遺伝子・タンパク質配列を集めたデータベース
+
+----
 
 ### KEGG Orthology (KO)
 
@@ -108,6 +127,7 @@
 - 複数のタンパク質から構成される、機能単位
 - 生物種間での保存度合い、複合体の形成、オペロン等を考慮し、オーソロググループの組み合わせで定義されている
 
+----
 
 ### KEGG Mapper
 
@@ -162,6 +182,9 @@
 [![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png “KAAS概要”) 
 
 ####【実習4】KAASを用いて、自動遺伝子アノテーションを行う。
+
+1.
+
 
 ----
 
