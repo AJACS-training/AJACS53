@@ -164,6 +164,12 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 [![Pathway_Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)
 
 
+### KEGG BRITE
+
+- タンパク質の機能や、様々な知識の階層分類（タンパクファミリー、薬、病気、細胞、等）
+
+[![KEGG BRITE Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_BRITE_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_BRITE_Home.png)
+
 #### 一般的なKEGGパスウェイ解析の流れ
 
 - ゲノム既知生物種の場合
