@@ -316,7 +316,7 @@
 
      → 「健常者＞AH患者_遺伝子リスト」[DOWN_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/yoki/TFactS_DOWN_genes.txt) 
      
-     → 「AH患者＞健常者_遺伝子リスト」[UP_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/yoki/TFactS_DOWN_genes.txt) 
+     → 「AH患者＞健常者_遺伝子リスト」[UP_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/yoki/TFactS_UP_genes.txt) 
       
    （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
   
