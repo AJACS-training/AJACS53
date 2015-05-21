@@ -34,6 +34,7 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
  - KEGG Genes
  - KEGG Orthology
  - KEGG Pathway
+ - KEGG BRITE
  - KEGG Module
  - KEGG Mapper
    - 【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
