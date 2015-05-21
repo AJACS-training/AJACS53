@@ -204,7 +204,7 @@ ncbi-geneid:100033416   hsa:100033416   equivalent
 
 ### KEGG Mapper
 
-- [KEGG Mapper Home: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
+- [KEGG Mapper Home](http://www.genome.jp/kegg/mapper.html)
 - Pathway, BRITE, Module などへ、指定した遺伝子、化合物等をマップするサービス一覧
 
 ####【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
