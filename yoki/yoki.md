@@ -314,9 +314,9 @@
 ##### マイクロアレイデータの準備
 - サンプルデータは【実習3】と同様に、【実習2】で解析した遺伝子発現データから得られた遺伝子リストを用います。TFactS は Gene Symbol を使用するので、プローブ ID を Gene Symbol に変換した遺伝子リストを準備します。 
 
-     → 「健常者＞AH患者_遺伝子リスト」[DOWN_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/TFactS_DOWN_genes.txt) 
+     → 「健常者＞AH患者_遺伝子リスト」[DOWN_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/yoki/TFactS_DOWN_genes.txt) 
      
-     → 「AH患者＞健常者_遺伝子リスト」[UP_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/FactS_UP_genes.txt) 
+     → 「AH患者＞健常者_遺伝子リスト」[UP_genes.txt](https://raw.githubusercontent.com/AJACS-training/AJACS53/master/yoki/TFactS_DOWN_genes.txt) 
       
    （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
   
