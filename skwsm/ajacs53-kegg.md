@@ -75,12 +75,15 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 
 1. [GenomeNet Home](http://www.genome.jp/)へアクセスする。
 [![GenomeNet Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)
-2. ページ上部のテキスト検索ボックスに、好きなキーワードを入れて検索してみる。DB名:エントリーID という形式で入力するとbgetモード（例 eco:b0002）、それ以外では、bfindモードで検索が行われる。
+2. ページ上部のテキスト検索ボックスに、好きなキーワードを入れて検索してみる。DB名:エントリーID という形式で入力するとbgetモード（例 eco:b0002）、それ以外では、bfindモードで検索が行われる(例 Histidine kinase, Cyanamide等)。
 
 
 ----
 
 ### LinkDB
+
+- データベースエントリーID間のリンク情報を収集したデータベース
+- ID変換にも利用可能
 
 [![LinkDB Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)
 
@@ -92,6 +95,28 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 3. ヒト遺伝子に関して、NCBI GENE と KEGG GENE の間の対応表を作成しダウンロードする。下図のように、from には、has （has は、Hono sapiens を意味する KEGGの生物種コード）を、to には、NCBI-GENE を入力し、downloadボタンを押す。
 [![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)
 4. ダウンロードされたテキストファイルの内容を確認する。
+
+```
+ncbi-geneid:1   hsa:1   equivalent
+ncbi-geneid:10  hsa:10  equivalent
+ncbi-geneid:100 hsa:100 equivalent
+ncbi-geneid:1000        hsa:1000        equivalent
+ncbi-geneid:10000       hsa:10000       equivalent
+ncbi-geneid:100008586   hsa:100008586   equivalent
+ncbi-geneid:100008587   hsa:100008587   equivalent
+ncbi-geneid:100008588   hsa:100008588   equivalent
+ncbi-geneid:100008589   hsa:100008589   equivalent
+ncbi-geneid:100009613   hsa:100009613   equivalent
+ncbi-geneid:100009676   hsa:100009676   equivalent
+ncbi-geneid:10001       hsa:10001       equivalent
+ncbi-geneid:10002       hsa:10002       equivalent
+ncbi-geneid:10003       hsa:10003       equivalent
+ncbi-geneid:100033413   hsa:100033413   equivalent
+ncbi-geneid:100033414   hsa:100033414   equivalent
+ncbi-geneid:100033415   hsa:100033415   equivalent
+ncbi-geneid:100033416   hsa:100033416   equivalent
+
+```
 
 ----
 
@@ -122,6 +147,8 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 
 - 生物種毎に、遺伝子・タンパク質配列を集めたデータベース
 
+[![KEGG GENES](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_GENES1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_GENES1.png)
+
 ----
 
 ### KEGG Orthology (KO)
@@ -132,19 +159,34 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 
 ### KEGG Pathway
 
+- [KEGG Pathway Home](http://www.genome.jp/kegg/pathway.html)
+
 [![Pathway_Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway1.png)
 
 [![Pathway_Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)
 
 
+### KEGG BRITE
+
+- [KEGG BRITE Home](http://www.genome.jp/kegg/brite.html)
+- タンパク質の機能や、様々な知識の階層分類（タンパクファミリー、薬、病気、細胞、等）
+
+[![KEGG BRITE Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_BRITE_HOME.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_BRITE_HOME.png)
+
 #### 一般的なKEGGパスウェイ解析の流れ
 
+- ゲノム既知生物種の場合
 1. 先にパスウェイにマップしたい遺伝子IDセットを作成（例：有意に遺伝子発現が変動した遺伝子IDセット）
 2. それら遺伝子IDをKEGG GENESのIDに変換（ID変換表はLinkDBで作成可能）
 3. KEGG Mapper Pathway reconstruction サービス等でパスウェイ再構築を行う
 
+
+- ゲノム未知生物種の場合
 1. 先にパスウェイにマップしたい遺伝子配列セットを作成（例：新規に読んだゲノムからの遺伝子配列セット）
 2. KAAS, BlastKOALA, GhostKOALA などで、K番号割り振りとパスウェイ再構築を行う
+
+[![KEGG Pathway Analysis](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway_Analysis.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway_Analysis.png)
+
 
 ----
 
@@ -212,6 +254,7 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 ####【実習5】KAASを用いて、自動遺伝子アノテーションを行う。
 
 
+
 ----
 
 ### BlastKOALA / GhostKOALA
@@ -236,7 +279,7 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 6. 次にPathway, Module, BRITE などがどのように再構築されたか確認する
 7. Reconstruct Module をクリックすると、再構築されたモジュール一覧が表示される。
 [![BlastKOALA Result Module List](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)
-8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176 (Assimilatory sulfate reduction, sulfate=>H2S モジュール)
+8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176: Assimilatory sulfate reduction, sulfate=>H2S モジュール
 [![M00176](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)
 9. モジュールエントリーページの、ortholog table ボタンをクリックして、生物種間でのそのモジュールの保存具合を見てみる。
 [![M00176 OrthologTable1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)
