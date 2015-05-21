@@ -15,7 +15,35 @@
 
 ## 概要
 
+GenomeNet/KEGG が提供するウェブサービスの中で、主としてパスウェイやモジュールに関わるものについて、ウェブの検索ツールの利用を体験します。
 
+
+----
+
+## 講義の流れ
+
+今回の講習では、コンピュータを使って以下の内容について説明します。
+
+- GenomeNet 概要
+ - bget/bfind について
+   - 【実習1】bget/bfind検索を体験する
+ - LinkDB について
+   - 【実習2】LinkDBを用いて、データベースIDの変換を行う。
+- KEGG 概要
+ - KEGG Organisms / KEGG Genomes
+ - KEGG Genes
+ - KEGG Orthology
+ - KEGG Pathway
+ - KEGG Module
+ - KEGG Mapper
+   - 【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
+   - 【実習4】KEGG Mapperを用いて、モジュール再構築を行う。
+ - KAAS
+   - 【実習5】KAASを用いて、自動遺伝子アノテーションを行う。
+ - BlastKOALA
+   - 【実習6】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
+
+----
 
 ##### 講習に際しての注意とお願い
 
@@ -34,26 +62,35 @@
 ### GenomeNet 概要
 
 - ゲノム情報を基盤とした生命科学研究を促進するためのインターネットサービス
-- KEGGを主幹とするデータベース群と、それらデータを解析するための計算ツール群からなっている
+- KEGGを中心とするデータベース群と、それらデータを解析するための計算ツール群からなっている
+ - [GenomeNet Home](http://www.genome.jp/)
+
+
+### bget/bfind
+
+- bget: GenomeNetのデータベースエントリーID検索
+- bfind: GenomeNetのデータベースに対するキーワード検索
+
+####【実習1】bget/bfind検索を体験する
+
+1. [GenomeNet Home](http://www.genome.jp/)へアクセスする。
+[![GenomeNet Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_GenomeNet_Home.png)
+2. ページ上部のテキスト検索ボックスに、好きなキーワードを入れて検索してみる。DB名:エントリーID という形式で入力するとbgetモード（例 eco:b0002）、それ以外では、bfindモードで検索が行われる。
+
 
 ----
 
-#### LinkDB
+### LinkDB
 
 [![LinkDB Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_Home.png)
 
-####【実習1】LinkDBを用いて、データベースIDの変換を行う。
+####【実習2】LinkDBを用いて、データベースIDの変換を行う。
 
 1. [LinkDB Home](http://www.genome.jp/linkdb/) へアクセスする。
-
 2. データベースリンクダイアグラム中の各データベースを表す矩形をクリックし、どのようにデータベース間がリンクされているか調べてみる。（このダイアグラムでは、KEGG内データベースから外部のデータベースか、外部データベース間のリンクのみ表示される）。
-
 [![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram1.png)
-
 3. ヒト遺伝子に関して、NCBI GENE と KEGG GENE の間の対応表を作成しダウンロードする。下図のように、from には、has （has は、Hono sapiens を意味する KEGGの生物種コード）を、to には、NCBI-GENE を入力し、downloadボタンを押す。
-
 [![LinkDB Link Diagram Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_LinkDB_diagram2.png)
-
 4. ダウンロードされたテキストファイルの内容を確認する。
 
 ----
@@ -62,16 +99,36 @@
 
 - ゲノムや分子レベルの情報から細胞、個体、エコシステムといった生命システムレベルの機能を整理したデータベース
 - 遺伝子や化合物などの分子部品のデータベースと、それらをつなぐネットワークのデータベースからなっている
+ - [KEGG Table of Contents](http://www.genome.jp/kegg/kegg2.html)
+- KEGGのパスウェイマップでは、色が様々な意味を持っている
+ - [KEGG color codes](http://www.genome.jp/kegg/kegg1c.html)
 
 [![Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_overview1.png)
 
-#### KEGG Organism
 
-#### KEGG Genes
+----
 
-#### KEGG Orthology (KO)
+### KEGG Organisms / KEGG Genomes
+
+- KEGG に含まれる生物種カタログ
+- KEGG Table of Contents の KEGG Organisms をクリック
+[![KEGG2 Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG2_2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG2_2.png)
+
+[![KEGG Genomes](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_Genomes.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KEGG_Genomes.png)
+
+----
+
+### KEGG Genes
+
+- 生物種毎に、遺伝子・タンパク質配列を集めたデータベース
+
+----
+
+### KEGG Orthology (KO)
 
 [![KO_Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KO_Fig1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KO_Fig1.png)
+
+----
 
 ### KEGG Pathway
 
@@ -79,7 +136,61 @@
 
 [![Pathway_Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Pathway2.png)
 
+
+#### 一般的なKEGGパスウェイ解析の流れ
+
+1. 先にパスウェイにマップしたい遺伝子IDセットを作成（例：有意に遺伝子発現が変動した遺伝子IDセット）
+2. それら遺伝子IDをKEGG GENESのIDに変換（ID変換表はLinkDBで作成可能）
+3. KEGG Mapper Pathway reconstruction サービス等でパスウェイ再構築を行う
+
+1. 先にパスウェイにマップしたい遺伝子配列セットを作成（例：新規に読んだゲノムからの遺伝子配列セット）
+2. KAAS, BlastKOALA, GhostKOALA などで、K番号割り振りとパスウェイ再構築を行う
+
+----
+
 ### KEGG Module
+
+- Mで始まるIDで管理されている
+- PATHWAYマップより小さい単位
+- 複数のタンパク質から構成される、機能単位
+- 生物種間での保存度合い、複合体の形成、オペロン等を考慮し、オーソロググループの組み合わせで定義されている
+
+----
+
+### KEGG Mapper
+
+####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
+
+- Pathway, BRITE, Module などへ、指定した遺伝子、化合物等をマップするサービス一覧
+
+####【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
+
+1. [KEGG Mapper - Reconstruct Pathway](http://www.kegg.jp/kegg/tool/map_pathway.html)にアクセスする。
+2. 例として準備されている、genelist.txt (single organism)の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
+[![Reconstruction pathway Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway1.png)
+3. Exec ボタンを押す
+4. 結果を確認する
+[![Reconstruction pathway list Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result1.png)
+5. 好きなパスウェイをクリックしてどのようにマップされたか確認する。
+[![Reconstruction pathway example](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map2.png)
+6. 次に、例として準備されている、genelist2.txt (multipule organisms)の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
+[![Reconstruction pathway Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway2.png)
+7. 結果を確認する
+[![Reconstruction pathway list Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Result2.png)
+8. 好きなパスウェイをクリックしてどのようにマップされたか確認する。
+[![Reconstruction pathway example](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Pathway_Map1.png)
+
+
+
+####【実習4】KEGG Mapperを用いて、モジュール再構築を行う。
+
+1. [KEGG Mapper - Reconstruct Module](http://www.kegg.jp/kegg/tool/map_module.html)にアクセスする。
+2. 例として準備されている、genelist.txt の内容を表示して、全てを選択し、元のページのテキストボックスにペーストする。
+[![Reconstruction module Fig1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module1.png)
+3. View complete modules and 1 or 2 block missing modules を選択し、Exec ボタンを押す
+4. 結果を確認する
+
+----
 
 ### KAAS (KEGG Automatic Annotation Server)
 
@@ -98,6 +209,11 @@
 
 [![Fig2](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_KAAS_1.png “KAAS概要”) 
 
+####【実習5】KAASを用いて、自動遺伝子アノテーションを行う。
+
+
+----
+
 ### BlastKOALA / GhostKOALA
 
 [![BlastKOALA Home](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_BlastKOALA_Home.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_BlastKOALA_Home.png)
@@ -107,7 +223,7 @@
  - KAAS の single-best に近い
  - 検索対象の配列データベースを絞っているため、KAASより高速にK番号の割り当てが行える。GHOSTX の方が BLASTより高速なため、BlastKOALA より GhostKOALAの方がさらに高速である。
 
-####【実習4】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
+####【実習6】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
 
 
 1. [KEGG Mapper - Annotate Sequence by BlastKOALA](http://www.kegg.jp/kegg/tool/annotate_sequence.html) にアクセスする
@@ -117,25 +233,16 @@
 4. 元のページに戻るので、Exec ボタンを押す
 5. しばらく待つと、以下のような結果ページが表示される
 [![SequenceAnnotationResult](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Sequence_Annotation_Result1.png)
-
+6. 次にPathway, Module, BRITE などがどのように再構築されたか確認する
+7. Reconstruct Module をクリックすると、再構築されたモジュール一覧が表示される。
+[![BlastKOALA Result Module List](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstruction_Module_list.png)
+8. 好きなモジュールをクリックして内容を見てみる。下の例は、M00176 (Assimilatory sulfate reduction, sulfate=>H2S モジュール)
+[![M00176](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_Reconstructon_Module_M00176.png)
+9. モジュールエントリーページの、ortholog table ボタンをクリックして、生物種間でのそのモジュールの保存具合を見てみる。
+[![M00176 OrthologTable1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table1.png)
+[![M00176 OrthologTable1](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table2.png)](https://github.com/skwsm/AJACS53/blob/skwsm-work/skwsm/images/AJACS53_M00176_Ortholog_Table2.png)
 
 ----
-
-### KEGG Mapper
-
-
-
-####[KEGG Mapper: http://www.genome.jp/kegg/mapper.html](http://www.genome.jp/kegg/mapper.html)
-
-- Pathway, BRITE, Module などへ、指定した遺伝子、
-
-####【実習1】LinkDBを用いて、データベースIDの変換を行う。
-
-####【実習2】KAASを用いて、自動遺伝子アノテーションを行う。
-
-####【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
-
-####【実習4】BlastKOALA / GhostKOALAを用いて、自動遺伝子アノテーション／パスウェイ再構築を行う。
 
 
 
