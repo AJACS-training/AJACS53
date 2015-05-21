@@ -26,9 +26,9 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
 
 - GenomeNet 概要
  - bget/bfind について
-  - 【実習1】bget/bfind検索を体験する
+   - 【実習1】bget/bfind検索を体験する
  - LinkDB について
-  - 【実習2】LinkDBを用いて、データベースIDの変換を行う。
+   - 【実習2】LinkDBを用いて、データベースIDの変換を行う。
 - KEGG 概要
  - KEGG Organisms / KEGG Genomes
  - KEGG Genes
@@ -36,12 +36,12 @@ GenomeNet/KEGG が提供するウェブサービスの中で、主としてパ�
  - KEGG Pathway
  - KEGG Module
  - KEGG Mapper
-  - 【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
-  - 【実習4】KEGG Mapperを用いて、モジュール再構築を行う。
+   - 【実習3】KEGG Mapperを用いて、パスウェイ再構築を行う。
+   - 【実習4】KEGG Mapperを用いて、モジュール再構築を行う。
  - KAAS
-  - 【実習5】KAASを用いて、自動遺伝子アノテーションを行う。
+   - 【実習5】KAASを用いて、自動遺伝子アノテーションを行う。
  - BlastKOALA
-  - 【実習6】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
+   - 【実習6】BlastKOALAを用いた、自動遺伝子アノテーション／パスウェイ再構築を行う。
 
 ----
 
