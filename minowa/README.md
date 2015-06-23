@@ -1,4 +1,4 @@
-![AJACS53_minowa_01.jpg](AJACS53_minowa_01.jpg)
+![AJACS53_minowa_01.jpg](slide_jpg/JACS53_minowa_01.jpg)
 ---
 
 ![AJACS53_minowa_02.jpg](AJACS53_minowa_02.jpg)
