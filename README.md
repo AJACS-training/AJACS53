@@ -1,4 +1,4 @@
-## AJACS 53
+## AJACS 53 (AJACS御茶ノ水)
 
 AJACS Training at Tokyo Medical and Dental University. See details 
 [here](http://events.biosciencedbc.jp/training/ajacs53)
