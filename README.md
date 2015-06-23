@@ -21,13 +21,13 @@ AJACS Training at Tokyo Medical and Dental University. See details
 ### プログラム 
 #### 5月20日(水)
 13:00～14:30「[NBDCの紹介とNBDCが提供するサービス](https://github.com/AJACS-training/AJACS53/blob/master/minowa/)」   
-箕輪 真理(科学技術振興機構バイオサイエンスデータベースセンター
-/情報・システム研究機構 ライフサイエンス統合データベースセンター)  
+箕輪 真理(科学技術振興機構 バイオサイエンスデータベースセンター (NBDC)
+/情報・システム研究機構 ライフサイエンス統合データベースセンター(DBCLS))  
 
 14:30～14:45 休憩   
 
 14:45～16:15 「[次世代シーケンサー（NGS）と関連するデータベース・ツール](https://github.com/AJACS-training/AJACS53/blob/master/nakazato/)」  
-仲里 猛留(情報・システム研究機構 ライフサイエンス統合データベースセンター)  
+仲里 猛留(情報・システム研究機構 ライフサイエンス統合データベースセンター (DBCLS))  
 
 16:15～16:30 休憩  
 
@@ -36,14 +36,14 @@ AJACS Training at Tokyo Medical and Dental University. See details
 
 #### 5月21日(木)  
 13:00～14:30 「[遺伝子発現DB・ウェブツールの使い方　基礎編](https://github.com/AJACS-training/AJACS53/blob/master/hono/)」  
-小野 浩雅(情報・システム研究機構ライフサイエンス統合データベースセンター)   
+小野 浩雅(情報・システム研究機構 ライフサイエンス統合データベースセンター (DBCLS))   
 
 14:30～14:45 休憩  
 
 14:45～16:15 「[遺伝子発現DB・ウェブツールの使い方　応用・実践編](https://github.com/AJACS-training/AJACS53/blob/master/yoki/)」  
-沖 嘉尚(日本大学生物資源学部)   
+沖 嘉尚(日本大学 生物資源学部 応用生物科学科 動物生体機構学研究室)   
 
 16:15～16:30 休憩  
 
 16:30～18:00 「[パスウェイデータベース　KEGG/GenomeNetのWebサービスの紹介](https://github.com/AJACS-training/AJACS53/blob/master/skwsm/)」  
-川島 秀一(情報・システム研究機構 ライフサイエンス統合データベースセンター)
+川島 秀一(情報・システム研究機構 ライフサイエンス統合データベースセンター (DBCLS))
