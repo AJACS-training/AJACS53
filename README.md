@@ -1,7 +1,7 @@
 ## AJACS 53 (AJACS御茶ノ水)
 
-AJACS Training at Tokyo Medical and Dental University. See details 
-[here](http://events.biosciencedbc.jp/training/ajacs53)
+### 公式ウェブページ
+[統合データベース講習会:AJACS御茶ノ水](http://events.biosciencedbc.jp/training/ajacs53)
 
 統合データベース講習会は、生命科学系のデータベースやツールの使い方、データベースを統合する活動を紹介する初心者向けの講習会です。  
 今回の講習会では、1日目は、生命科学系データベースのカタログ、横断検索、アーカイブの使い方に加えて、次世代シーケンサーのデータベース解析に必要なデータベース・ツールの紹介や、DDBJ Pipelineの使い方、2日目は、KEGG PATHWAYを例にパスウェイデータベースの使い方、遺伝子発現データベース・ウェブツールの使い方についてご紹介します。参加者全員がハンズオンでコンピュータを使いながらの講習です。
