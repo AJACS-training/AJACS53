@@ -1,4 +1,8 @@
-![AJACS53_minowa_01.jpg](slide_jpg/JACS53_minowa_01.jpg)
+# 統合データベース講習会AJACS御茶ノ水
+[13:00～14:30「NBDCの紹介とNBDCが提供するサービス」
+箕輪 真理(科学技術振興機構バイオサイエンスデータベースセンター /情報・システム研究機構 ライフサイエンス統合データベースセンター)](https://github.com/AJACS-training/AJACS53/tree/master/minowa)
+
+![AJACS53_minowa_01.jpg](AJACS53_minowa_01.jpg)
 ---
 
 ![AJACS53_minowa_02.jpg](AJACS53_minowa_02.jpg)
