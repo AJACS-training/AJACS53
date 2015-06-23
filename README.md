@@ -20,7 +20,7 @@ AJACS Training at Tokyo Medical and Dental University. See details
 
 ### プログラム 
 #### 5月20日(水)
-13:00～14:30「[NBDCの紹介とNBDCが提供するサービス](https://github.com/AJACS-training/AJACS53/tree/master/minowa)」   
+13:00～14:30「[NBDCの紹介とNBDCが提供するサービス](https://github.com/AJACS-training/AJACS53/blob/master/minowa/README.md)」   
 箕輪 真理(科学技術振興機構バイオサイエンスデータベースセンター
 /情報・システム研究機構 ライフサイエンス統合データベースセンター)  
 
