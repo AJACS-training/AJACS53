@@ -11,24 +11,24 @@ AJACS Training at Tokyo Medical and Dental University. See details
 
 14:30～14:45 休憩   
 
-14:45～16:15 「次世代シーケンサー(NGS)と関連するデータベース・ツール」  
+14:45～16:15 「[次世代シーケンサー（NGS）と関連するデータベース・ツール](https://github.com/AJACS-training/AJACS53/blob/master/nakazato/ajacs53.md)」  
 仲里 猛留(情報・システム研究機構 ライフサイエンス統合データベースセンター)  
 
 16:15～16:30 休憩  
 
-16:30～18:00 「DDBJ Pipelineを用いたDNA多型注釈解析の実習」  
+16:30～18:00 「[DDBJ Pipelineを用いたDNA多型注釈解析の実習](https://github.com/AJACS-training/AJACS53/blob/master/mochizuki/mochizuki.md)」  
 望月 孝子(情報・システム研究機構新領域融合研究センター(国立遺伝学研究所))  
 
 #### 5月21日(木)  
-13:00～14:30 「遺伝子発現DB・ウェブツールの使い方 基礎編」  
+13:00～14:30 「[遺伝子発現DB・ウェブツールの使い方　基礎編](https://github.com/AJACS-training/AJACS53/blob/master/hono/AJACS53.md)」  
 小野 浩雅(情報・システム研究機構ライフサイエンス統合データベースセンター)   
 
 14:30～14:45 休憩  
 
-14:45～16:15 「遺伝子発現DB・ウェブツールの使い方 応用・実践編」  
+14:45～16:15 「[遺伝子発現DB・ウェブツールの使い方　応用・実践編](https://github.com/AJACS-training/AJACS53/blob/master/yoki/yoki.md)」  
 沖 嘉尚(日本大学生物資源学部)   
 
 16:15～16:30 休憩  
 
-16:30～18:00 「パスウェイデータベース KEGG/GenomeNetのWebサービスの紹介」  
+16:30～18:00 「[パスウェイデータベース　KEGG/GenomeNetのWebサービスの紹介](https://github.com/AJACS-training/AJACS53/blob/master/skwsm/ajacs53-kegg.md)」  
 川島 秀一(情報・システム研究機構 ライフサイエンス統合データベースセンター)
